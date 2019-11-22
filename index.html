@@ -1,0 +1,776 @@
+<!doctype html>
+<html>
+  
+
+<head >
+
+        
+
+<title>Character Count</title>
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    
+    <meta name="google-site-verification" content="" />
+    
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+   
+
+
+
+
+  </head>
+
+  <body class="index" itemscope itemtype="https://schema.org/WebPage" >
+    <header class="body-header js-body-header">
+      <nav class="menu" id="js-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+	<ul class="menu-list">
+		<li class="menu-list__item">
+<a href="index.html" class="menu-list__link active" itemprop="url">				<span itemprop="name">Character Count</span>
+</a>		</li>
+		<!-- <li class="menu-list__item">
+<a href="/words-per-page/" class="menu-list__link" itemprop="url">				<span itemprop="name">Words per Page</span>
+</a>		</li> -->
+		<li class="menu-list__item">
+<a href="#" class="menu-list__link" itemprop="url">				<span itemprop="name">Blog</span>
+</a>		</li>
+    <li class="menu-list__item">
+<!-- <a href="faq/index.html" class="menu-list__link" itemprop="url">        <span itemprop="name">FAQ</span>
+</a>  -->   </li>
+	</ul>
+	<ul class="menu-list">
+		<li class="menu-list__item menu-icon">
+		  <a href="" class="menu-icon__link" target="_blank" title="Share on Twitter"><svg class="icon-social" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path class="icon-social__fill" d="M16,3.53933333 C15.4113333,3.80066667 14.7786667,3.97666667 14.1146667,4.056 C14.792,3.65 15.3133333,3.00666667 15.558,2.24 C14.924,2.616 14.2213333,2.88933333 13.474,3.03666667 C12.8753333,2.39866667 12.0213333,2 11.0773333,2 C9.26466667,2 7.79466667,3.47 7.79466667,5.28266667 C7.79466667,5.53933333 7.824,5.79 7.88,6.03066667 C5.152,5.89333333 2.73333333,4.58666667 1.114,2.60066667 C0.831333333,3.08533333 0.669333333,3.64933333 0.669333333,4.25066667 C0.669333333,5.39 1.24933333,6.39466667 2.13,6.98333333 C1.592,6.96666667 1.08533333,6.81866667 0.643333333,6.57266667 C0.642666667,6.58666667 0.642666667,6.6 0.642666667,6.614 C0.642666667,8.20466667 1.77466667,9.53133333 3.276,9.83266667 C3.00066667,9.90733333 2.71066667,9.948 2.41133333,9.948 C2.19933333,9.948 1.994,9.92733333 1.79333333,9.88933333 C2.21133333,11.1926667 3.42333333,12.142 4.86,12.1686667 C3.73666667,13.0493333 2.32133333,13.574 0.783333333,13.574 C0.518,13.574 0.256666667,13.5586667 0,13.528 C1.45266667,14.4593333 3.17866667,15.0026667 5.032,15.0026667 C11.0693333,15.0026667 14.372,10.0013333 14.372,5.66333333 C14.372,5.52066667 14.3686667,5.37933333 14.362,5.23866667 C15.0033333,4.77533333 15.56,4.19733333 16,3.53933333"></path>
+</svg></a>
+		 	<a href="" class="menu-icon__link" target="_blank" title="Share on Facebook"><svg class="icon-social" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path class="icon-social__fill" d="M6.48196682,15.9986141 L6.48196682,8.70106445 L4,8.70106445 L4,5.85694718 L6.48269403,5.85694718 L6.48269403,3.75967432 C6.48269403,1.32424892 7.98656375,0 10.1827371,0 C11.2299192,0 12.1374769,0.0778114414 12.3999996,0.112717509 L12.3999996,2.65649715 L10.8772224,2.65722436 C9.68387127,2.65722436 9.45189136,3.21863028 9.45189136,4.04110448 L9.45189136,5.85694718 L12.2981903,5.85694718 L11.9294949,8.70106445 L9.45189136,8.70106445 L9.45189136,15.9986141 L6.48196682,15.9986141 L6.48196682,15.9986141 Z"></path>
+</svg></a>
+		  <a href="" class="menu-icon__link" target="_blank" title="Share on Google+"><svg class="icon-social" width="22px" height="16px" viewBox="0 0 22 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path class="icon-social__fill" d="M7,7 L7,9.4 L10.97,9.4 C10.81,10.43 9.77,12.42 7,12.42 C4.61,12.42 2.66,10.44 2.66,8 C2.66,5.56 4.61,3.58 7,3.58 C8.36,3.58 9.27,4.16 9.79,4.66 L11.69,2.83 C10.47,1.69 8.89,1 7,1 C3.13,1 0,4.13 0,8 C0,11.87 3.13,15 7,15 C11.04,15 13.72,12.16 13.72,8.16 C13.72,7.7 13.67,7.35 13.61,7 L7,7 L7,7 Z M22,7 L20,7 L20,5 L18,5 L18,7 L16,7 L16,9 L18,9 L18,11 L20,11 L20,9 L22,9 L22,7 L22,7 Z"></path>
+</svg></a>
+		</li>
+	</ul>
+</nav>
+    </header>
+
+    <main class="body-content js-body-content">
+      
+<article class="page" id="js-page">
+  <header class="page-header">
+    <textarea class="page-header__textarea" id="js-textarea" placeholder="Type or paste your text" autofocus></textarea>
+    <!-- <div class="page-header__text">
+      <h1 class="page-header__title" itemprop="name">Word Counter</h1>
+      <p class="page-header__description" itemprop="description">Count characters, words.</p>
+      <a href="#about" title="Learn more about Word Counter" class="page-header__link">Learn more</a>
+    </div> -->
+  </header>
+  <section class="page-modules" >
+
+    <!-- <div class="page-modules__text">
+      <div class="fb-like row" data-href="https://www.facebook.com/Freelance-Developer-1157166547750892/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="fb-follow" data-href="https://www.facebook.com/zuck" data-layout="standard" data-size="small" data-show-faces="true"></div>
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+    <script type="IN/Share" data-counter="top"></script>
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+    <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/" data-format="inline" data-related="false"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+      <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+
+      <!-- Place this tag where you want the share button to render. -->
+      <!-- <div class="g-plus" data-action="share"></div> -->
+    <!-- </div> --> 
+  </section>
+  <section class="page-modules">
+    <div class="page-modules__text">
+      <h3 class="page-modules__title">From the Blog</h3>
+      <a href="blog/index.html" class="page-modules__link">Read more</a>
+    </div>
+    <article class="page-module" itemscope itemtype="https://schema.org/Article">
+      <a href="blog/how-many-pages-is-1000-words/index.html" class="page-module__link" title="How Many Pages is 1000 Words?">
+        <div class="page-module__bar page-module__bar--learn">
+          <h5 class="page-module__tag cl-violet">Blog</h5>
+        </div>
+        <div class="page-module__text">
+          <h3 class="page-module__title" itemprop="headline"></h3>
+          <p class="page-module__description" itemprop="description"></p>
+        </div>
+      </a>
+    </article>
+    <article class="page-module" itemscope itemtype="https://schema.org/Article">
+      <a href="blog/word-count-in-google-docs/index.html" class="page-module__link" title="Word Count in Google Docs">
+        <div class="page-module__bar page-module__bar--tutorial">
+          <h5 class="page-module__tag cl-pink">Blog</h5>
+        </div>
+        <div class="page-module__text">
+          <h3 class="page-module__title" itemprop="headline"></h3>
+          <p class="page-module__description" itemprop="description"></p>
+        </div>
+      </a>
+    </article>
+    <article class="page-module" itemscope itemtype="https://schema.org/Article">
+      <a href="blog/how-many-words-per-page/index.html" class="page-module__link" title="How Many Words per Page?">
+        <div class="page-module__bar page-module__bar--learn">
+          <h5 class="page-module__tag cl-violet">Blog</h5>
+        </div>
+        <div class="page-module__text">
+          <h3 class="page-module__title" itemprop="headline"></h3>
+          <p class="page-module__description" itemprop="description"></p>
+        </div>
+      </a>
+    </article>
+  </section>  
+<footer class="page-footer">
+  <div class="page-footer__group">
+    <div class="page-footer__breadcrumbs">
+      <a href="index.html" class="page-footer__link page-footer__link--home">Character Count</a>
+    </div>
+    <span class="page-footer__copyright">&copy; 2019</span>
+  </div>
+  <div class="page-footer__group">
+    <a href="" class="page-footer__logo" title="Wordcounto" target="_blank">Character Count</a>
+  </div>
+</footer>
+</article>
+<aside class="panel">
+  <header class="panel-header">
+    <h2 class="panel-header__title f5 cl-white">Stats</h2>
+    <div class="panel-header__icon">
+        <span class="panel-header__icon-bar1"></span>
+        <span class="panel-header__icon-bar2"></span>
+        <span class="panel-header__icon-bar3"></span>
+        <span class="panel-header__icon-bar4"></span>
+    </div>
+  </header>
+  <section class="panel-counter" style="margin-bottom:20px;">
+    <div class="panel-counter__block panel-counter__block--social">
+      <br><br><br><br><br><br><br>ADS<br><br><br>
+  </section>
+  <section class="panel-counter">
+    <div class="panel-counter__block">
+      <div class="panel-counter__group">
+        <h3 class="f7 cl-blue-1">Words</h3>
+        <span id="js-words" class="panel-counter__count cl-blue-1">0</span>
+      </div>
+      <div class="panel-counter__group">
+        <h3 class="panel-counter__title f7 cl-blue-1">
+          <span class="panel-counter__text">Characters</span>
+         <!--  <span class="panel-counter__dots">
+              <span class="panel-counter__dot1"></span>
+              <span class="panel-counter__dot2"></span>
+              <span class="panel-counter__dot3"></span>
+          </span> -->
+        </h3>
+        <span id="js-all" class="panel-counter__count cl-blue-1">0</span>
+        <div class="panel-counter__spaces">
+          <span id="js-characters" class="panel-counter__spaces-count f5 cl-blue-0">0</span>
+          <span class="panel-counter__spaces-text f7 cl-blue-0">No Spaces</span>
+        </div>
+      </div>
+    </div>
+    <div class="panel-counter__block">
+      <div class="panel-counter__group col-3">
+        <h3 class="f7 cl-blue-1">Sentences</h3>
+        <span id="js-sentences" class="panel-counter__count cl-blue-1">0</span>
+      </div>
+      <div class="panel-counter__group col-3">
+        <h3 class="f7 cl-blue-1">Paragraphs</h3>
+        <span id="js-paragraphs" class="panel-counter__count cl-blue-1">0</span>
+      </div>
+      <div class="panel-counter__group col-3" >
+        <h3 class="f7 cl-blue-1">Pages</h3>
+        <span id="js-pages" class="panel-counter__count cl-blue-1">0</span>
+      </div>
+    </div>
+    <div class="panel-counter__block panel-counter__block--social">
+      <div class="panel-counter__group">
+        <div class="panel-counter__module">
+          <div class="panel-counter__visual panel-counter__visual--small">
+            <span id="js-graph-twitter" class="panel-counter__graph graph graph--small graph--twitter" data-value="0"></span>
+            <img src="assets/images/icon-sentences.svg" class="panel-counter__icon icon--sentences" alt="Icon sentences" />
+          </div>
+          <div class="panel-counter__label panel-counter__label--flex">
+            <span class="panel-counter__label-text text--twitter f7 cl-blue-1">Twitter</span>
+            <span class="panel-counter__label-text text--sentences f7 cl-blue-1">Sentences</span>
+             <span class="panel-counter__label-text text--pinterest f7 cl-blue-1">Pinterest</span>
+            <span class="panel-counter__label-data">
+              <span id="js-count-twitter" class="panel-counter__label-count count--twitter cl-blue-1">140</span>
+              <!-- <span id="js-sentences" class="panel-counter__label-count count--sentences cl-blue-1">0</span> -->
+              <span id="js-count-pinterest" class="panel-counter__label-count count--pinterest cl-blue-1">0</span>
+            </span>
+          </div>
+        </div>
+        <div class="panel-counter__module">
+          <div class="panel-counter__visual panel-counter__visual--small">
+            <span id="js-graph-google" class="panel-counter__graph graph graph--small graph--google" data-value="0"></span>
+            <img src="assets/images/icon-paragraphs.svg" class="panel-counter__icon icon--paragraphs" alt="Icon paragraphs" />
+          </div>
+          <div class="panel-counter__label panel-counter__label--flex">
+            <span class="panel-counter__label-text text--google f7 cl-blue-1">Google</span>
+            <span class="panel-counter__label-text text--paragraphs f7 cl-blue-1">Paragraphs</span>
+            <span class="panel-counter__label-text text--linkedin f7 cl-blue-1">Linkedin</span>
+            <span class="panel-counter__label-data">
+              <span id="js-count-google" class="panel-counter__label-count count--google cl-blue-1">160</span>
+              <!-- <span id="js-paragraphs" class="panel-counter__label-count count--paragraphs cl-blue-1">0</span> -->
+              <span id="js-count-linkedin" class="panel-counter__label-count count--linkedin cl-blue-1">0</span>
+            </span>
+          </div>
+        </div>
+        <div class="panel-counter__module">
+          <div class="panel-counter__visual panel-counter__visual--small">
+            <span id="js-graph-facebook" class="panel-counter__graph graph graph--small graph--facebook" data-value="0"></span>
+            <img src="assets/images/icon-pages.svg" class="panel-counter__icon icon--pages" alt="Icon pages" />
+          </div>
+          <div class="panel-counter__label panel-counter__label--flex">
+            <span class="panel-counter__label-text text--facebook f7 cl-blue-1">Facebook</span>
+            <span class="panel-counter__label-text text--pages f7 cl-blue-1">Pages</span>
+            <span class="panel-counter__label-text text--instagram f7 cl-blue-1">Instagram</span>
+            <span class="panel-counter__label-data">
+              <span id="js-count-facebook" class="panel-counter__label-count count--facebook cl-blue-1">250</span>
+              <!-- <span id="js-pages" class="panel-counter__label-count count--pages cl-blue-1"></span> -->
+              <span id="js-count-instagram" class="panel-counter__label-count count--instagram cl-blue-1">0</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="panel-counter__group">
+        <div class="panel-counter__visual panel-counter__visual--large">
+          <span class="panel-counter__graph-outer panel-counter__graph-outer--large"></span>
+          <span id="js-graph-large" class="panel-counter__graph panel-counter__graph--large graph graph--large" data-value="0">
+            <span class="graph-segment graph-segment25"></span>
+            <span class="graph-segment graph-segment24"></span>
+            <span class="graph-segment graph-segment23"></span>
+            <span class="graph-segment graph-segment22"></span>
+            <span class="graph-segment graph-segment21"></span>
+            <span class="graph-segment graph-segment20"></span>
+            <span class="graph-segment graph-segment19"></span>
+            <span class="graph-segment graph-segment18"></span>
+            <span class="graph-segment graph-segment17"></span>
+            <span class="graph-segment graph-segment16"></span>
+            <span class="graph-segment graph-segment15"></span>
+            <span class="graph-segment graph-segment14"></span>
+            <span class="graph-segment graph-segment13"></span>
+            <span class="graph-segment graph-segment12"></span>
+            <span class="graph-segment graph-segment11"></span>
+            <span class="graph-segment graph-segment10"></span>
+            <span class="graph-segment graph-segment9"></span>
+            <span class="graph-segment graph-segment8"></span>
+            <span class="graph-segment graph-segment7"></span>
+            <span class="graph-segment graph-segment6"></span>
+            <span class="graph-segment graph-segment5"></span>
+            <span class="graph-segment graph-segment4"></span>
+            <span class="graph-segment graph-segment3"></span>
+            <span class="graph-segment graph-segment2"></span>
+            <span class="graph-segment graph-segment1"></span>
+          </span>
+          <span class="panel-counter__graph-angle"></span>
+          <span class="panel-counter__graph-lines">
+              <span class="panel-counter__graph-line" data-value="0"></span>
+              <span class="panel-counter__graph-line" data-value="12"></span>
+              <span class="panel-counter__graph-line" data-value="24"></span>
+              <span class="panel-counter__graph-line" data-value="36"></span>
+              <span class="panel-counter__graph-line" data-value="48"></span>
+              <span class="panel-counter__graph-line" data-value="60"></span>
+              <span class="panel-counter__graph-line" data-value="72"></span>
+              <span class="panel-counter__graph-line" data-value="84"></span>
+              <span class="panel-counter__graph-line" data-value="96"></span>
+              <span class="panel-counter__graph-line" data-value="108"></span>
+              <span class="panel-counter__graph-line" data-value="120"></span>
+              <span class="panel-counter__graph-line" data-value="132"></span>
+              <span class="panel-counter__graph-line" data-value="144"></span>
+              <span class="panel-counter__graph-line" data-value="156"></span>
+              <span class="panel-counter__graph-line" data-value="168"></span>
+          </span>
+          <span class="panel-counter__graph-inner panel-counter__graph-inner--large">
+            <span class="panel-counter__graph-text panel-counter__graph-text--0 f7">0</span>
+            <span class="panel-counter__graph-text panel-counter__graph-text--150 f7">150</span>
+            <span class="panel-counter__graph-text panel-counter__graph-text--1500 f7">1500</span>
+            <span class="panel-counter__graph-text panel-counter__graph-text--250 f7">250</span>
+            <span class="panel-counter__graph-text panel-counter__graph-text--2500 f7">2500</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="panel-keyword">
+    <div class="panel-keyword__header">
+      <h3 class="panel-keyword__title f7 cl-blue-1">Keyword Density</h3>
+      <div class="panel-keyword__toggles">
+        <span class="panel-keyword__toggle f7 is-active js-keyword-toggle" data-keyword="0">Top</span>
+        <span class="panel-keyword__toggle f7 js-keyword-toggle" data-keyword="1">1x</span>
+        <span class="panel-keyword__toggle f7 js-keyword-toggle" data-keyword="2">2x</span>
+        <span class="panel-keyword__toggle f7 js-keyword-toggle" data-keyword="3">3x</span>
+      </div>
+    </div>
+      <ul id="0" class="panel-keyword__list is-active js-keyword-list">
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+      </ul>
+      <ul id="1" class="panel-keyword__list js-keyword-list">
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+      </ul>
+      <ul id="2" class="panel-keyword__list js-keyword-list">
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+      </ul>
+      <ul id="3" class="panel-keyword__list js-keyword-list">
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+          <li class="panel-keyword__item js-keyword-item">
+            <span class="panel-keyword__graph js-keyword-graph">
+              <span class="panel-keyword__fill"></span>
+            </span>
+            <span class="panel-keyword__word f7 cl-blue-1 js-keyword-title"></span>
+            <span class="panel-keyword__data">
+              <span class="panel-keyword__count f5 cl-blue-1 js-keyword-count"></span>
+              <span class="panel-keyword__ratio f7 cl-blue-0 js-keyword-ratio"></span>
+            </span>
+          </li>
+      </ul>
+  </section>
+</aside>
+    </main>
+<!--     <div class="b"> &nbsp;
+    </div>
+    <div class="g">
+      <div class="g4-md g4-xs g6-sm g12-xs" style="border:1px solid #fff;">
+        <h3 class="text-center">AD</h3>
+      </div>
+      <div class="g4-md g4-xs g6-sm g12-xs" style="border:1px solid #fff;">
+         <h3 class="text-center">AD</h3>
+      </div>
+      <div class="g4-md g4-xs g6-sm g12-xs" style="border:1px solid #fff;">
+         <h3 class="text-center">AD</h3>
+      </div>
+    </div>
+     <div class="g"> &nbsp;
+    </div> -->
+    <div class="body-modal js-body-modal" id="js-modal" style="display: none">
+      
+<div class="modal__content" id="js-modal-content">
+	<div class="modal__action">
+		<span class="modal__subtitle">Wait! Before you go...</span>
+		<h3 class="modal__title">Signup to get exclusive members only updates!</h3>
+		<p class="modal__description">Be the first to know when we publish updates and blog about best-practices, tips and tricks.</p>
+
+		<form class="modal__form validate"
+				action="" 
+				method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+
+			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+		  	<input type="text" name="b_6ce6bc96610293f881de113d3_aa290231cb" tabindex="-1" value="">
+		  </div>
+
+			<input class="modal__input" type="email" value="" name="EMAIL" id="email" placeholder="Enter your email..." required>
+		  <input class="modal__submit" type="submit" value="Subscribe!" name="subscribe">
+		</form>
+
+	</div>
+	<div class="modal__close">
+		<button class="modal__close-button" id="js-modal-close">No thanks, I like being the last to know.</button>
+	</div>
+</div>
+    </div>
+
+    <script src="assets/js/main.js" data-turbolinks-track="reload"></script>
+    <script type="text/javascript">
+      (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  
+    </script>
+  </body>
+
+
+</html>
